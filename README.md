@@ -2,80 +2,80 @@
 
 ## Project Description
 
-Unsere App soll Schülerinnen, Schülern und Studierenden dabei helfen, zu entscheiden, ob sich ein Skitag mehr lohnt als der Schulbesuch.
+Our app aims to help school and university students decide whether a day on the slopes is worth missing classes for.
 
-Dazu ruft die App über eine Wetter-API die Wettervorhersage für den kommenden Tag sowie die Neuschneemengen der vergangenen Nacht bzw. der letzten Tage ab. Diese Daten werden mit dem persönlichen Stundenplan abgeglichen.
+To do this, the app uses a weather API to retrieve the forecast for the following day, as well as snowfall amounts from the previous night or the past few days. It then compares this information with the user's personal timetable.
 
-Die Nutzer können für jedes Fach individuell festlegen, wie wichtig ihnen der Unterricht ist und ob die Lektionen aufgezeichnet werden oder anderweitig nachgeholt werden können.
+Users can specify how important each subject is to them and whether the lessons are recorded or can be made up in other ways.
 
-Auf Grundlage dieser Informationen bewertet die App die Schneeverhältnisse und die schulischen Verpflichtungen. Anschliessend berechnet sie, **ob sich das Schwänzen der Schule zugunsten eines Skitags lohnt**, und gibt eine entsprechende Empfehlung ab.
+Based on this information, the app evaluates the snow conditions and academic commitments. It then calculates **whether skipping classes for a day of skiing is worth it** and provides a recommendation.
 
 ## Planned Features
 
-- **Wetterdaten per API:** Abruf der Wettervorhersage für den kommenden Tag.
-- **Schneeverhältnisse:** Analyse der Neuschneemengen der vergangenen Nacht und Tage.
-- **Skigebietsauswahl:** Auswahl des gewünschten Skigebiets.
-- **Stundenplan:** Hinterlegen und Verwalten eines persönlichen Stundenplans.
-- **Individuelle Fachbewertung:** Gewichtung der Fächer nach persönlicher Wichtigkeit.
-- **Unterrichtsaufzeichnungen:** Berücksichtigung, ob verpasste Lektionen nachgeholt werden können.
-- **Persönliche Empfehlung:** Abwägung der Schneebedingungen gegen die schulischen Verpflichtungen.
+- **Weather Data via API:** Retrieve the weather forecast for the following day.
+- **Snow Conditions:** Analyze snowfall amounts from the previous night and recent days.
+- **Ski Resort Selection:** Choose a preferred ski resort.
+- **Timetable:** Create and manage a personal class schedule.
+- **Individual Subject Ratings:** Assign importance levels to individual subjects.
+- **Recorded Lessons:** Consider whether missed lessons can be caught up on.
+- **Personalized Recommendation:** Weigh snow conditions against academic commitments.
 
 ## How It Works
 
-1. **Skigebiet auswählen:** Der Nutzer wählt ein Skigebiet aus.
-2. **Wetterdaten abrufen:** Die App ermittelt Wetterprognosen und Neuschneemengen.
-3. **Stundenplan abgleichen:** Die betroffenen Unterrichtslektionen werden ermittelt.
-4. **Fächer bewerten:** Wichtigkeit und Nachholmöglichkeiten werden berücksichtigt.
-5. **Empfehlung berechnen:** Die App bewertet, ob sich ein Skitag lohnt.
+1. **Select a Ski Resort:** The user chooses a ski resort.
+2. **Retrieve Weather Data:** The app obtains weather forecasts and snowfall data.
+3. **Check the Timetable:** The app identifies which classes would be missed.
+4. **Evaluate Subjects:** Subject importance and options for catching up on missed material are taken into account.
+5. **Calculate a Recommendation:** The app evaluates whether taking a day off to ski is worthwhile.
 
 ## Tech Stack
 
 | Component | Technology |
 |---|---|
-| Programming Language | Python 3.14 (geplant) |
+| Programming Language | Python 3.14 (planned) |
 | Package Management | pip / requirements.txt |
 | Weather API | TBD |
-| Containerization | Docker (vorbereitet) |
+| Containerization | Docker (set up) |
 | Version Control | Git & GitHub |
 | Development Environment | VS Code / Neovim |
 
 ## Installation and Setup
 
-Das Projekt befindet sich noch in der Entwicklung. Die folgenden Schritte richten die Python-Entwicklungsumgebung ein. Die Anwendung ist möglicherweise noch nicht vollständig lauffähig.
+The project is still under development. The following steps set up the Python development environment. The application may not yet be fully functional.
 
 ### Prerequisites
 
 - Git
-- Python (vorgesehen: 3.14)
+- Python (planned version: 3.14)
 
 ### Installation
 
-1. Repository klonen und im Terminal in das Projektverzeichnis wechseln.
-2. Virtuelle Umgebung erstellen und aktivieren:
+1. Clone the repository and navigate to the project directory in your terminal.
+2. Create and activate a virtual environment:
 
    ```bash
    python -m venv .venv
    source .venv/bin/activate
    ```
 
-3. Abhängigkeiten installieren:
+3. Install the dependencies:
 
    ```bash
    python -m pip install -r requirements.txt
    python -m pip install -r requirements-dev.txt
    ```
 
-4. Falls benötigt, Umgebungsvariablen vorbereiten:
+4. Set up environment variables if needed:
 
    ```bash
    cp .env.example .env
    ```
 
-   Benötigte API-Schlüssel werden später in `.env` eingetragen. Die Datei `.env` darf nicht ins Repository committed werden.
+   Required API keys will be added to `.env` later. The `.env` file must not be committed to the repository.
 
 ### Run the Application
 
-Sobald der Einstiegspunkt implementiert ist, kann die Anwendung voraussichtlich mit folgendem Befehl gestartet werden:
+Once the entry point has been implemented, the application should be runnable with the following command:
 
 ```bash
 python src/main.py
@@ -83,33 +83,33 @@ python src/main.py
 
 ## Development Process and Community Rules
 
-- `main`: Stabiler Hauptbranch.
-- `feature/*`: Branches für neue Funktionen.
-- `fix/*`: Branches für Fehlerbehebungen.
+- `main`: Stable main branch.
+- `feature/*`: Branches for developing new features.
+- `fix/*`: Branches for fixing bugs.
 
-Änderungen werden in eigenen Branches entwickelt und über Pull Requests integriert. Vor dem Merge sollen sie von einem anderen Teammitglied überprüft werden.
+Changes are developed in separate branches and integrated through pull requests. Before merging, changes should be reviewed by another team member.
 
 ## Repository Structure
 
 ```text
 .
-├── config.ini              # Anwendungskonfiguration
-├── docker-compose.yml      # Docker-Compose-Konfiguration
-├── Dockerfile              # Docker-Image-Definition
-├── .dockerignore           # Von Docker ausgeschlossene Dateien
+├── config.ini              # Application configuration
+├── docker-compose.yml      # Docker Compose configuration
+├── Dockerfile              # Docker image definition
+├── .dockerignore           # Files excluded from Docker builds
 ├── docs/
-│   ├── architecture.md     # Architekturdokumentation
-│   └── retro.md            # Retrospektiven
-├── .env.example            # Beispiel für Umgebungsvariablen
-├── .gitignore              # Von Git ausgeschlossene Dateien
-├── README.md               # Projektdokumentation
-├── requirements-dev.txt    # Entwicklungsabhängigkeiten
-├── requirements.txt        # Python-Abhängigkeiten
+│   ├── architecture.md     # Architecture documentation
+│   └── retro.md            # Retrospectives
+├── .env.example            # Example environment variables
+├── .gitignore              # Files excluded from Git
+├── README.md               # Project documentation
+├── requirements-dev.txt    # Development dependencies
+├── requirements.txt        # Python dependencies
 └── src/
-    ├── config.py           # Konfiguration
-    └── main.py             # Einstiegspunkt der Anwendung
+    ├── config.py           # Configuration
+    └── main.py             # Application entry point
 ```
 
 ## Architecture
 
-Die Architektur wird im Verlauf des Projekts dokumentiert: [Architecture Documentation](docs/architecture.md).
+The software architecture will be documented as the project progresses: [Architecture Documentation](docs/architecture.md).

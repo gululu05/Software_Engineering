@@ -1,0 +1,223 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT" pages="4">
+  <diagram id="c4-1" name="1 - Context">
+    <mxGraphModel dx="911" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;fontColor=#17324D;align=left;" value="Level 1 | System Context" vertex="1">
+          <mxGeometry height="45" width="1400" x="55" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=15;fontColor=#586B7A;align=left;" value="Wer nutzt StundenplanB und mit welchen externen Systemen kommuniziert es?" vertex="1">
+          <mxGeometry height="40" width="1430" x="57" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="T5e63SY70f_7Ue3QGDfa-1" edge="1" parent="1" source="student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" target="app" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="260" />
+              <mxPoint x="745" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eeYsJS_P5ZRixdcKmYbk-5" connectable="0" parent="T5e63SY70f_7Ue3QGDfa-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;div&gt;Stundenplan +&amp;nbsp;&lt;/div&gt;&lt;div&gt;Bewertung&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="student" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Stundent" vertex="1">
+          <mxGeometry height="115" width="270" x="430" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="eeYsJS_P5ZRixdcKmYbk-2" edge="1" parent="1" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="eeYsJS_P5ZRixdcKmYbk-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="System" vertex="1">
+          <mxGeometry height="115" width="360" x="620" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="weather" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Weather API&lt;/b&gt;" vertex="1">
+          <mxGeometry height="110" width="290" x="830" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeWidth=2;fontSize=13;fontColor=#273E52;labelBackgroundColor=#FFFFFF;startArrow=classicThin;startFill=0;" target="weather" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eeYsJS_P5ZRixdcKmYbk-6" connectable="0" parent="e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Prognose und Neuschnee" vertex="1">
+          <mxGeometry relative="1" x="-0.2242" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eeYsJS_P5ZRixdcKmYbk-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Endprodukt AI" vertex="1">
+          <mxGeometry height="220" width="275" x="663" y="610" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wnGsBjHqKWYPXWxvmQw4" name="2 - Container">
+    <mxGraphModel dx="1290" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-3" edge="1" parent="1" source="KVFcOl3GTa2suxPG5YmQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KVFcOl3GTa2suxPG5YmQ-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-7" connectable="0" parent="KVFcOl3GTa2suxPG5YmQ-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Stundenplan" vertex="1">
+          <mxGeometry relative="1" x="-0.2417" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Student" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-12" edge="1" parent="1" source="KVFcOl3GTa2suxPG5YmQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="KVFcOl3GTa2suxPG5YmQ-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="System" vertex="1">
+          <mxGeometry height="60" width="120" x="540" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-10" edge="1" parent="1" source="KVFcOl3GTa2suxPG5YmQ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KVFcOl3GTa2suxPG5YmQ-9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="480" />
+              <mxPoint x="610" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-5" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Student" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-19" edge="1" parent="1" source="KVFcOl3GTa2suxPG5YmQ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KVFcOl3GTa2suxPG5YmQ-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-21" connectable="0" parent="KVFcOl3GTa2suxPG5YmQ-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Ergebnis" vertex="1">
+          <mxGeometry relative="1" x="0.0055" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-9" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="System" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;direction=south;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="Bewertung" vertex="1">
+          <mxGeometry height="350" width="60" x="210" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-17" edge="1" parent="1" source="KVFcOl3GTa2suxPG5YmQ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KVFcOl3GTa2suxPG5YmQ-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-20" connectable="0" parent="KVFcOl3GTa2suxPG5YmQ-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Wetterdaten" vertex="1">
+          <mxGeometry relative="1" x="-0.181" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-15" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Wetter API" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="KVFcOl3GTa2suxPG5YmQ-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;rounded=1;" value="END API" vertex="1">
+          <mxGeometry height="80" width="80" x="570" y="850" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="c4-2" name="3 -Component">
+    <mxGraphModel dx="1106" dy="624" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="swimlane;html=1;startSize=36;horizontal=1;rounded=1;fillColor=#F6FAFE;swimlaneFillColor=#F6FAFE;strokeColor=#8AB3D2;fontColor=#1B567C;fontSize=16;fontStyle=1;align=left;spacingLeft=14;" value="StundenplanB System" vertex="1">
+          <mxGeometry height="560" width="875" x="365" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="84du7S2Y6sCn5GmUckko-3" edge="1" parent="boundary" source="MXgUt94gvxOevnq7q9q5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="84du7S2Y6sCn5GmUckko-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdANaUOuQXNnykxNnd3U-4" edge="1" parent="boundary" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.671;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;" target="LdANaUOuQXNnykxNnd3U-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="178.39" />
+              <mxPoint x="561" y="178.39" />
+              <mxPoint x="561" y="140" />
+              <mxPoint x="560.5" y="140" />
+            </Array>
+            <mxPoint x="610" y="218.39" as="sourcePoint" />
+            <mxPoint x="559.9199999999998" y="140.01000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MXgUt94gvxOevnq7q9q5-4" parent="boundary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="&lt;div&gt;Skip Class&lt;/div&gt;&lt;div&gt;Calculator&lt;/div&gt;" vertex="1">
+          <mxGeometry height="105" width="120" x="550" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="app" parent="boundary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="Bewertung einzelner Fächer" vertex="1">
+          <mxGeometry height="105" width="260" x="255" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="T3qVVXEvtpj2NAuEBHO6-2" edge="1" parent="boundary" source="student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.35;exitY=0.008;exitDx=0;exitDy=0;startArrow=block;startFill=1;exitPerimeter=0;" target="app">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5KojDWsCvenoJqBtQJs1-6" edge="1" parent="boundary" source="student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="MXgUt94gvxOevnq7q9q5-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="545" y="360" />
+              <mxPoint x="610" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="student" parent="boundary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;DB client&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="435" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="84du7S2Y6sCn5GmUckko-2" parent="boundary" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="&lt;div&gt;weather client&lt;/div&gt;" vertex="1">
+          <mxGeometry height="105" width="120" x="697" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="LdANaUOuQXNnykxNnd3U-3" edge="1" parent="boundary" source="LdANaUOuQXNnykxNnd3U-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="app" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="515" y="170" />
+              <mxPoint x="385" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LdANaUOuQXNnykxNnd3U-1" parent="boundary" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;rounded=1;" value="UI client" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;fontColor=#17324D;align=left;" value="Level 2 | Container" vertex="1">
+          <mxGeometry height="45" width="1400" x="55" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=15;fontColor=#586B7A;align=left;" value="Laufende Anwendungen und Datenspeicher; Docker ist die Laufzeitumgebung, kein eigener C4-Container." vertex="1">
+          <mxGeometry height="40" width="1430" x="57" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="weather" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6EAF0;strokeColor=#73869A;fontColor=#233448;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Weather API&lt;/b&gt;&lt;br&gt;Externer Anbieter (offen)" vertex="1">
+          <mxGeometry height="125" width="260" x="1270" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="84du7S2Y6sCn5GmUckko-4" edge="1" parent="1" source="84du7S2Y6sCn5GmUckko-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="weather" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LdANaUOuQXNnykxNnd3U-2" edge="1" parent="1" source="MXgUt94gvxOevnq7q9q5-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LdANaUOuQXNnykxNnd3U-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MXgUt94gvxOevnq7q9q5-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="UI" vertex="1">
+          <mxGeometry height="70" width="210" x="800" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="5KojDWsCvenoJqBtQJs1-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Datenbank" vertex="1">
+          <mxGeometry height="82.5" width="155" x="812.5" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="5KojDWsCvenoJqBtQJs1-4" edge="1" parent="1" source="student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;" target="5KojDWsCvenoJqBtQJs1-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="c4-4" name="4 - Code">
+    <mxGraphModel dx="2890" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;fontColor=#17324D;align=left;" value="Level 4 | Code (Entwurf)" vertex="1">
+          <mxGeometry height="45" width="1400" x="55" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=15;fontColor=#586B7A;align=left;" value="Mögliche Python-Klassen und Funktionen. Die konkrete Implementierung ist noch nicht festgelegt." vertex="1">
+          <mxGeometry height="40" width="1430" x="57" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="main" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8ECF7;strokeColor=#2874A6;fontColor=#123B5D;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="&lt;div&gt;&lt;u&gt;&lt;b&gt;Bewertung einzelner Fächer&lt;/b&gt;&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;get_fach()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;get_bewertung()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;class fach(get_fach(), get_bewertung())&lt;/font&gt;&lt;/div&gt;&lt;div&gt;save gewichteter_stundenplan&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="330" x="-100" y="221" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

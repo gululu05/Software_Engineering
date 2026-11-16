@@ -32,7 +32,7 @@ Based on this information, the app evaluates the snow conditions and academic co
 
 | Component | Technology |
 |---|---|
-| Programming Language | Python 3.14 (planned) |
+| Programming Language | Python 3.12 slim|
 | Package Management | pip / requirements.txt |
 | Weather API | TBD |
 | Containerization | Docker (set up) |

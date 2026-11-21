@@ -2,12 +2,12 @@
 import requests
 
 from .weather_forecast import WeatherForecast
+from location.geocoding_api import GeocodingAPI
 
 
 class WeatherAPI:
 
     BASE_URL = "https://api.open-meteo.com/v1/forecast"
-    GEOCODING_URL = "https://geocoding-api.open-meteo.com/v1/search"
 
     WEATHER_CODES = {
         0: "Clear sky",
@@ -34,15 +34,15 @@ class WeatherAPI:
         99: "Thunderstorm with heavy hail"
     }
 
-    def __init__(self, timeout=10):
+    def __init__(self, geocoding_api=None, timeout=10):
+        self.geocoding_api = geocoding_api or GeocodingAPI()
         self.timeout = timeout
 
     def get_tomorrows_forecast(
         self,
         resort_name
     ):
-        # Open-Meteo returns today at index 0 and tomorrow at index 1.
-        location = self.get_coordinates(resort_name)
+        location = self.geocoding_api.get_coordinates(resort_name)
 
         if location is None:
             return None

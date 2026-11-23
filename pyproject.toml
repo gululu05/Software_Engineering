@@ -1,0 +1,61 @@
+[project]
+name = "stundenplanb"
+version = "0.1.0"
+description = "Ski day recommendation based on weather, snow conditions and university timetable"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.ruff]
+required-version = ">=0.17"  # older ruff versions have different defaults; fail loudly instead
+line-length = 120
+# target-version is deliberately NOT set: ruff reads it from [project].requires-python per repo.
+extend-exclude = [".original"]
+
+[tool.ruff.lint]
+# Keep ruff's curated defaults and add on top of them.
+extend-select = [
+    "E", "W",   # pycodestyle (flake8 core)
+    "C90",      # mccabe complexity (flake8 / pylint too-complex)
+    "I",        # isort
+    "N",        # pep8-naming
+    "UP",       # pyupgrade: modern syntax for your target-version
+    "B",        # bugbear
+    "S",        # bandit security checks
+    "DTZ",      # naive datetimes
+    "T20",      # print / pdb left in code
+    "G",        # logging format
+    "RET",      # return-statement hygiene
+    "PL",       # pylint (PLC, PLE, PLR, PLW)
+    "RUF",      # ruff-specific
+    "D",        # pydocstyle: docstrings required
+    "ANN",      # flake8-annotations: type hints required
+]
+ignore = [
+    "PLR2004",  # magic-value comparison: too noisy in practice
+    "D105",     # magic methods (__repr__, __eq__) are self-explanatory
+    "D107",     # __init__ args are documented in the class docstring (Google style)
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"   # also disables the D rules that conflict with each other
+
+[tool.ruff.lint.flake8-annotations]
+mypy-init-return = true  # allow __init__ without "-> None", like mypy does
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = [
+    "S101",     # asserts are the point of tests
+    "PLR2004",
+    "D",        # test names are the documentation
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.mypy]
+strict = true
+files = ["src", "tests"]
+mypy_path = "src"

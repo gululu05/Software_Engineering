@@ -56,7 +56,7 @@ jobs:
           fi
 
       - name: Type Checking
-        run: mypy src
+        run: mypy
 
 
   test:

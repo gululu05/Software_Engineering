@@ -59,3 +59,6 @@ docstring-code-format = true
 strict = true
 files = ["src", "tests"]
 mypy_path = "src"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

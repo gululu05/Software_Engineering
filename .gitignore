@@ -1,3 +1,21 @@
-.venv/
+# Python bytecode
 __pycache__/
 *.pyc
+
+# Virtual environment
+.venv/
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local database
+data/
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Environment variables
+.env
